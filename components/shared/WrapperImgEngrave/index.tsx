@@ -23,7 +23,7 @@ export function WrapperImgEngrave({
         const timeoutId = setTimeout(() => {
             const elementImg1: any = imageRef1?.current
             setScale(elementImg1?.width / 1344)
-        }, 10)
+        }, 100)
 
         return () => clearTimeout(timeoutId)
     }, [imageRef1])
